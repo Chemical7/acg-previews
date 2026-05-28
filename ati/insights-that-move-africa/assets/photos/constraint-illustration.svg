@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f7f4"/>
+      <stop offset="1" stop-color="#e8e6e0"/>
+    </linearGradient>
+    <linearGradient id="cardA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00093c"/><stop offset="1" stop-color="#1a2780"/></linearGradient>
+    <linearGradient id="cardB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00905d"/><stop offset="1" stop-color="#0fb377"/></linearGradient>
+    <linearGradient id="cardC" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbb500"/><stop offset="1" stop-color="#ffd152"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d9d4c8" stroke-width="0.5"/></pattern>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#grid)"/>
+
+  <!-- The committee table (subtle perspective) -->
+  <ellipse cx="400" cy="700" rx="340" ry="60" fill="#ffffff" stroke="#d9d4c8" stroke-width="2"/>
+  <ellipse cx="400" cy="690" rx="340" ry="60" fill="#ffffff" stroke="#00093c" stroke-width="1.5"/>
+
+  <!-- Papers / evidence on table -->
+  <rect x="180" y="650" width="100" height="70" fill="#ffffff" stroke="#d9d4c8" stroke-width="1.2" transform="rotate(-3 230 685)"/>
+  <line x1="195" y1="668" x2="265" y2="668" stroke="#5a5a5a" stroke-width="1.5" transform="rotate(-3 230 685)"/>
+  <line x1="195" y1="678" x2="255" y2="678" stroke="#5a5a5a" stroke-width="1" transform="rotate(-3 230 685)"/>
+  <line x1="195" y1="688" x2="265" y2="688" stroke="#5a5a5a" stroke-width="1" transform="rotate(-3 230 685)"/>
+  <line x1="195" y1="698" x2="245" y2="698" stroke="#5a5a5a" stroke-width="1" transform="rotate(-3 230 685)"/>
+
+  <rect x="350" y="660" width="100" height="70" fill="#ffffff" stroke="#fbb500" stroke-width="2.5" transform="rotate(2 400 695)"/>
+  <rect x="360" y="668" width="80" height="6" fill="#fbb500" transform="rotate(2 400 695)"/>
+  <line x1="360" y1="685" x2="430" y2="685" stroke="#00093c" stroke-width="1.5" transform="rotate(2 400 695)"/>
+  <line x1="360" y1="695" x2="420" y2="695" stroke="#5a5a5a" stroke-width="1" transform="rotate(2 400 695)"/>
+  <line x1="360" y1="705" x2="430" y2="705" stroke="#5a5a5a" stroke-width="1" transform="rotate(2 400 695)"/>
+  <line x1="360" y1="715" x2="410" y2="715" stroke="#5a5a5a" stroke-width="1" transform="rotate(2 400 695)"/>
+
+  <rect x="520" y="655" width="100" height="70" fill="#ffffff" stroke="#d9d4c8" stroke-width="1.2" transform="rotate(4 570 690)"/>
+  <line x1="535" y1="673" x2="605" y2="673" stroke="#5a5a5a" stroke-width="1.5" transform="rotate(4 570 690)"/>
+  <line x1="535" y1="683" x2="595" y2="683" stroke="#5a5a5a" stroke-width="1" transform="rotate(4 570 690)"/>
+  <line x1="535" y1="693" x2="605" y2="693" stroke="#5a5a5a" stroke-width="1" transform="rotate(4 570 690)"/>
+  <line x1="535" y1="703" x2="585" y2="703" stroke="#5a5a5a" stroke-width="1" transform="rotate(4 570 690)"/>
+
+  <!-- Floating evidence cards above the table -->
+  <g>
+    <rect x="100" y="180" width="220" height="160" rx="6" fill="url(#cardA)"/>
+    <text x="120" y="220" font-family="Poppins,sans-serif" font-size="11" fill="#fbb500" letter-spacing="2" font-weight="700">EVIDENCE</text>
+    <line x1="120" y1="234" x2="200" y2="234" stroke="#fbb500" stroke-width="2"/>
+    <rect x="120" y="252" width="170" height="6" fill="#ffffff"/>
+    <rect x="120" y="266" width="145" height="6" fill="#ffffff" opacity="0.7"/>
+    <rect x="120" y="280" width="170" height="6" fill="#ffffff" opacity="0.7"/>
+    <rect x="120" y="294" width="130" height="6" fill="#ffffff" opacity="0.5"/>
+    <circle cx="270" cy="315" r="14" fill="none" stroke="#fbb500" stroke-width="2"/>
+    <path d="M 263 315 L 268 320 L 277 309" stroke="#fbb500" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <rect x="350" y="120" width="220" height="160" rx="6" fill="url(#cardB)"/>
+    <text x="370" y="160" font-family="Poppins,sans-serif" font-size="11" fill="#ffffff" letter-spacing="2" font-weight="700">FRAMING</text>
+    <line x1="370" y1="174" x2="450" y2="174" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 370 200 Q 410 192 450 200 T 540 200" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 370 220 Q 410 212 450 220 T 540 220" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <rect x="370" y="240" width="170" height="6" fill="#ffffff" opacity="0.6"/>
+    <rect x="370" y="254" width="140" height="6" fill="#ffffff" opacity="0.6"/>
+  </g>
+
+  <g>
+    <rect x="500" y="200" width="220" height="160" rx="6" fill="url(#cardC)"/>
+    <text x="520" y="240" font-family="Poppins,sans-serif" font-size="11" fill="#00093c" letter-spacing="2" font-weight="700">DECISION</text>
+    <line x1="520" y1="254" x2="600" y2="254" stroke="#00093c" stroke-width="2"/>
+    <line x1="520" y1="274" x2="700" y2="274" stroke="#00093c" stroke-width="1.5" opacity="0.4"/>
+    <line x1="520" y1="284" x2="700" y2="284" stroke="#00093c" stroke-width="1.5" opacity="0.4"/>
+    <rect x="528" y="294" width="40" height="36" fill="#00093c"/>
+    <rect x="572" y="284" width="40" height="46" fill="#00093c"/>
+    <rect x="616" y="270" width="40" height="60" fill="#ff6c05"/>
+    <text x="636" y="262" text-anchor="middle" font-family="Poppins,sans-serif" font-size="14" font-weight="700" fill="#00093c">↑</text>
+  </g>
+
+  <!-- Connection lines (the journey from evidence to decision) -->
+  <path d="M 320 260 Q 410 360 480 480 Q 540 580 600 660" stroke="#00093c" stroke-width="2" stroke-dasharray="4,4" fill="none" opacity="0.4"/>
+  <circle cx="600" cy="660" r="6" fill="#ff6c05"/>
+
+  <!-- Header label -->
+  <text x="400" y="80" text-anchor="middle" font-family="Poppins,sans-serif" font-size="11" fill="#00093c" letter-spacing="3" font-weight="700" opacity="0.6">FROM EVIDENCE TO DECISION</text>
+  <line x1="320" y1="90" x2="480" y2="90" stroke="#fbb500" stroke-width="2"/>
+
+  <!-- Bottom byline -->
+  <text x="400" y="820" text-anchor="middle" font-family="Poppins,sans-serif" font-size="14" font-style="italic" fill="#00093c" font-weight="300">Where committees stall, ATI structures the proof.</text>
+
+  <!-- Subtle concentric rings mark bottom -->
+  <circle cx="400" cy="900" r="22" fill="none" stroke="#00093c" stroke-width="1.2" opacity="0.3"/>
+  <circle cx="400" cy="900" r="15" fill="none" stroke="#00093c" stroke-width="1.2" opacity="0.3"/>
+  <circle cx="400" cy="900" r="8" fill="none" stroke="#00093c" stroke-width="1.2" opacity="0.3"/>
+  <circle cx="400" cy="900" r="2.5" fill="#fbb500"/>
+</svg>
